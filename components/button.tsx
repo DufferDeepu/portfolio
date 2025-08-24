@@ -15,7 +15,7 @@ const Button = () => {
 
           <button className="flex items-center px-6 py-4 text-sm bg-green-100 text-green-800 rounded-4xl border-none transition-all duration-200">
             <div className="relative mr-2.5">
-                <div className="w-1.5 h-1.5 bg-green-600 rounded-full animate-ping absolute"></div>
+                <div className="w-1.5 h-1.5 bg-green-900 rounded-full animate-ping absolute"></div>
                 <div className="w-1.5 h-1.5 bg-green-800 rounded-full relative"></div>
             </div>
               Available

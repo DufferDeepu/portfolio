@@ -5,12 +5,14 @@ import {
   GithubIcon,
   LinkedinIcon,
   TwitterIcon,
+  LeetCodeIcon
 } from "@/components/svgs";
 import type {
   AtSignIconHandle,
   GithubIconHandle,
   LinkedinIconHandle,
   TwitterIconHandle,
+  LeetCodeIconHandle
 } from "@/components/svgs";
 
 export default function Links() {
@@ -18,6 +20,7 @@ export default function Links() {
   const githubIconRef = useRef<GithubIconHandle>(null);
   const linkedinIconRef = useRef<LinkedinIconHandle>(null);
   const atSignIconRef = useRef<AtSignIconHandle>(null);
+  const leetCodeIconRef = useRef<LeetCodeIconHandle>(null);
 
   const handleTwitterMouseEnter = () => {
     twitterIconRef.current?.startAnimation();
@@ -120,6 +123,24 @@ export default function Links() {
       >
         <AtSignIcon
           ref={atSignIconRef}
+          className="text-white text-xl transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:-rotate-12"
+          size={20}
+        />
+      </a>
+      <a
+        href="https://leetcode.com/u/DeepeshBind/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex flex-row items-center justify-start gap-2.5 
+     text-white transition duration-300 ease-in-out
+     bg-neutral-700 hover:bg-neutral-900 rounded-md px-3 py-2.5
+     group  
+   "
+        onMouseEnter={handleAtSignMouseEnter}
+        onMouseLeave={handleAtSignMouseLeave}
+      >
+        <LeetCodeIcon
+          ref={leetCodeIconRef}
           className="text-white text-xl transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:-rotate-12"
           size={20}
         />
