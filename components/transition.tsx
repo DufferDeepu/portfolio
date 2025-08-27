@@ -5,7 +5,7 @@ import { twMerge } from "tailwind-merge";
 
 export const Transition = ({
   words,
-  duration = 3000,
+  duration = 2000,
   className,
 }: {
   words: string[];
