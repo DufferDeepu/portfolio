@@ -6,7 +6,7 @@ import { Separator } from "@/components/ui/separator";
 import Available from "@/components/button";
 import WorkExperience from "@/components/workexp";
 import Link from "next/link";
-import CircularGallery from "@/components/circularGallery";
+import { ExpandableCard } from "@/components/project";
 
 
 export default function Home() {
@@ -18,8 +18,8 @@ export default function Home() {
             <Image
               src="/dp.jpg"
               alt="Deepesh"
-              width={44}
-              height={44}
+              width={70}
+              height={70}
               className="rounded-full"
             />
             <div className="flex flex-col ml-2">
@@ -89,9 +89,12 @@ export default function Home() {
         <Separator className="my-8 bg-gray-600" />
         <div>
           <h1 className="text-base font-bold text-white">Projects</h1>
-          
+          <ExpandableCard />
         </div>
-          <Separator className="my-8 bg-gray-600" />
+        <div>
+          <h3 className="text-center text-gray-400">more</h3>    
+        </div>          
+        <Separator className="my-8 bg-gray-600" />
       </div>
     </main>
   );
