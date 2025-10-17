@@ -132,28 +132,28 @@ export function ExpandableCard() {
             layoutId={`card-${card.title}-${id}`}
             key={`card-${card.title}-${id}`}
             onClick={() => setActive(card)}
-            className="p-4 flex flex-col md:flex-row justify-between items-center hover:bg-neutral-800/90 dark:hover:bg-neutral-100/90 rounded-xl cursor-pointer"
+            className="p-4 flex flex-row justify-between items-center hover:bg-neutral-800/90 dark:hover:bg-neutral-100/90 rounded-xl cursor-pointer"
           >
-            <div className="flex gap-4 flex-col md:flex-row ">
+            <div className="flex gap-4 flex-row">
               <motion.div layoutId={`image-${card.title}-${id}`}>
                 <img
                   width={100}
                   height={100}
                   src={card.src}
                   alt={card.title}
-                  className="h-40 w-40 md:h-14 md:w-14 rounded-lg object-cover object-top"
+                  className="h-14 w-14 rounded-lg object-cover object-top"
                 />
               </motion.div>
               <div className="">
                 <motion.h3
                   layoutId={`title-${card.title}-${id}`}
-                  className="font-medium text-neutral-300/90 dark:text-neutral-400 text-center md:text-left"
+                  className="font-medium text-neutral-300/90 dark:text-neutral-400 text-left"
                 >
                   {card.title}
                 </motion.h3>
                 <motion.p
                   layoutId={`description-${card.description}-${id}`}
-                  className="text-neutral-600 dark:text-neutral-400 text-center md:text-left"
+                  className="text-neutral-600 dark:text-neutral-400 text-left"
                 >
                   {card.description}
                 </motion.p>
