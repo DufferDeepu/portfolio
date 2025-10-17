@@ -1,9 +1,9 @@
 import { Transition } from "@/components/transition";
 import Image from "next/image";
 import Links from "@/components/links";
-import Button from "@/components/button";
+import Button from "@/components/hire";
 import { Separator } from "@/components/ui/separator";
-import Available from "@/components/button";
+import Available from "@/components/hire";
 import WorkExperience from "@/components/workexp";
 import Link from "next/link";
 import { ExpandableCard } from "@/components/project";
@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main className="min-h-screen pt-10 container items-center justify-center flex-col">
       <div className="content-center items-center flex flex-none flex-col flex-nowrap gap-2.5 h-min justify-center overflow-visible relative w-full px-4 py-0">
-        <div className="container max-w-[512px] flex flex-row justify-between items-center w-full">
+        <div className="container max-w-[900px] flex flex-row justify-between items-center w-full">
           <div className="flex flex-row items-center">
             <Image
               src="/dp.jpg"
@@ -41,7 +41,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex mt-8 flex-col max-w-[512px] mx-auto p-5 lg:p-0">
+      <div className="flex mt-8 flex-col max-w-[900px] mx-auto p-5 lg:p-0">
         <div className="container">
           <h1 className="text-xl font-bold text-gray-400">
             Hey I&apos;m Deepesh,
