@@ -8,7 +8,6 @@ import WorkExperience from "@/components/workexp";
 import Link from "next/link";
 import { ExpandableCard } from "@/components/project";
 
-
 export default function Home() {
   return (
     <main className="min-h-screen pt-10 container items-center justify-center flex-col">
@@ -16,7 +15,7 @@ export default function Home() {
         <div className="container max-w-[900px] flex flex-row justify-between items-center w-full">
           <div className="flex flex-row items-center">
             <Image
-              src="/dp.jpg"
+              src="/deep.jpg"
               alt="Deepesh"
               width={70}
               height={70}
@@ -28,15 +27,9 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <Link
-            href={"/resume"}
-            className="text-gray-400 text-sm mr-2"
-            >
-            <span 
-             className="shiny-text">
-              Resume
-            </span>
-          </Link>
+            <Link href={"/resume"} className="text-gray-400 text-sm mr-2">
+              <span className="shiny-text">Resume</span>
+            </Link>
           </div>
         </div>
       </div>
@@ -91,10 +84,23 @@ export default function Home() {
           <h1 className="text-base font-bold text-white">Projects</h1>
           <ExpandableCard />
         </div>
-        <div>
-          <h3 className="text-center text-gray-400">more</h3>    
-        </div>          
+        <div className="text-center">
+          <Link
+            href={"https://github.com/DufferDeepu?tab=repositories"}
+            className="text-gray-400 text-md mr-2"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span
+              className="shiny-text">
+              more
+            </span>
+          </Link>{" "}
+        </div>
         <Separator className="my-8 bg-gray-600" />
+        <div>
+         <span className="text-gray-400 text-sm">dufferdeepu @ 2025</span>
+        </div>    
       </div>
     </main>
   );
