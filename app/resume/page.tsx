@@ -9,7 +9,7 @@ export default function Resume() {
         <div className="bg-neutral-800 p-4 rounded-lg shadow-lg mb-6">
           <div className="relative aspect-[8.5/11] w-full">
             <iframe
-              src="/Deepesh_bind.pdf"
+              src="/DeepeshBind.pdf"
               className="w-full h-full"
               title="Aniruddh's Resume"
             />

@@ -209,6 +209,22 @@ export const CloseIcon = () => {
 
 const cards = [
   {
+    description: "Github Action visualizer",
+    title: "ActionG",
+    src: "actiong.png",
+    ctaText: "",
+    ctaLink: "https://www.actiong.fun/",
+    content: () => {
+      return (
+        <p>
+          An interactive open-source visualizer for your GitHub Actions workflows.
+          Stop the "push-and-pray" cycle. Visually build, import, and edit your CI/CD pipelines,
+          and get perfect, ready-to-commit YAML in seconds.
+        </p>
+      );
+    },
+  },
+  {
     description: "Web based IDE",
     title: "Coreco",
     src: "project1.svg",
@@ -217,10 +233,9 @@ const cards = [
     content: () => {
       return (
         <p>
-          Built a full-featured, browser-based IDE enabling real-time code execution with WebContainers and AI-assisted
-          evelopment using locally running Ollama models.
-          Coreco supports multi-stack project templates, features an integrated terminal, and delivers a smooth,
-          developer-first UI with Monaco Editor at its core.
+          Built a full-featured, browser-based IDE enabling real-time code execution with WebContainers
+           and AI-assisted evelopment using locally running Ollama models. Coreco supports multi-stack project templates,
+            features an integrated terminal, and delivers a smooth, developer-first UI with Monaco Editor at its core.
         </p>
       );
     },
